@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+  web:
+    container_name: web
+    image: node
+    restart: always
+    build: .
+    ports:
+      - 4000:4000
+    links:
+      - mongo
+    volumes:
+      - .:/usr/src/app
+    environment:
+      - MONGODB_URI=mongodb://mongo/notesdb
+      - PORT=4000
+      - NODE_ENV=development
+    command: /bin/sh -c 'npm install && npm run dev'
+  mongo:
+    container_name: database
+    image: mongo
+    ports:
+      - "27017:27017"
+    logging:
+      driver: none
