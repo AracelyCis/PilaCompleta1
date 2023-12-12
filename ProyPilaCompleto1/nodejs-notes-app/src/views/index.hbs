@@ -1,16 +1,116 @@
 <div class="card card-body p-5 mt-4">
-  <h1 class="display-4">Notes App Nodejs And Mongodb!</h1>
-  <p class="lead">A simple App to manage Notes developed with Nodejs, Express,
-    Mongodb and Javascript Technologies</p>
+  <h1 style="text-align:center;" class="display-4">Libros con aroma de café</h1>
+  <p class="lead" style="text-align: center;">Biblioteca digital creada para 
+    brindar reseñas de libros, esto con el fin de crear una comunidad donde podamos hablar sobre libros y
+    promover la lectura.</p>
   <hr class="my-4" />
-  <p>veniam voluptatibus aliquid unde sit Libero veniam similique ex reiciendis
-    doloribus! Deleniti sunt cum ad est atque. Esse earum
+  <p style="text-align: center;"> " Un libro es una aventura esperando quien la emprenda. <br>
+  Sólo asómate a su senda, la recompensa es segura. <br>
+  Gozarás de la lectura, lograrás esparcimiento.<br>
+  El libro es el fundamento que nos da sabiduria y nos llena de alegría, es
+  del alma el alimento. "
   </p>
-  <div>
+ <div style="text-align: center;">
     <a
       class="btn btn-primary btn-lg"
       href="/auth/signup"
       role="button"
     >Register</a>
   </div>
+ <hr class="my-4" />
+ 
+  <br>
+  <h4 style="text-align: center;">Géneros populares</h4>
+<!-- Gallery -->
+<div class="image-container" @mouseover="mostrarTexto" @mouseout="ocultarTexto">
+  <div :src="imagenURL" alt="Imagen" class="imagen">
+    <img @mouseover=""
+      src="../../img/fantasia.png"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water"
+    />
+    <div class="overlay" v-show="mostrarTexto">
+        <p>{{ Hola }}</p>
+      </div>
+    <img
+      src="../../img/fantasiafondo.png"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Wintry Mountain Landscape"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="../../img/romancefondo.png"      
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Mountains in the Clouds"
+    />
+
+    <img
+      src="../../img/romance.png"      
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="../../img/terror.png"      
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Waves at Sea"
+    />
+
+    <img
+      src="../../img/terrorfondo.png"      
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Yosemite National Park"
+    />
+  </div>
+
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <img
+      src="../../img/fantasia.png"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water"
+    />
+
+    <img
+      src="../../img/fantasiafondo.png"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Wintry Mountain Landscape"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="../../img/romancefondo.png"      
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Mountains in the Clouds"
+    />
+
+    <img
+      src="../../img/romance.png"      
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water"
+    />
+  </div>
+  
+
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="../../img/terror.png"      
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Waves at Sea"
+    />
+
+    <img
+      src="../../img/terrorfondo.png"      
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Yosemite National Park"
+    />
+  </div>
+</div>
+<!-- Gallery -->
+
 </div>
