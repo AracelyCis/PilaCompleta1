@@ -16,6 +16,7 @@ import notesRoutes from "./routes/notes.routes.js";
 import userRoutes from "./routes/auth.routes.js";
 import "./config/passport.js";
 
+
 // Initializations
 const app = express();
 const __dirname = dirname(fileURLToPath(import.meta.url));

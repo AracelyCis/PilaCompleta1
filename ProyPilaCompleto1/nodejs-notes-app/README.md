@@ -16,6 +16,13 @@ npm run dev # run in development mode
 npm start # run in production mode
 ```
 
+npm install vue
+
+#
+Instalar Vuetify
+vue add vuetify
+#
+
 > You need to have Mongodb installed Locally or stablish a MONGODB_URI environment variable in order to connect to any mongodb instance (using Mongodb Atlas for example)
 
 ### Environment Variables
