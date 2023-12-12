@@ -1,9 +1,13 @@
 body {
-  background: #121212;
+  background: linear-gradient(blue, pink);
 }
 
 .logo {
   width: 30%;
+}
+
+div .logoindex{
+  width: 7%;
 }
 
 .bg-black {

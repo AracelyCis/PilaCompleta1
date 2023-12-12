@@ -20,62 +20,20 @@
  <hr class="my-4" />
  
   <br>
-  <h4 style="text-align: center;">Géneros populares</h4>
+  <h4 style="text-align: center;">Populares</h4>
+<!-- Gallery --> <!-- src="../../img/fantasia.png"-->
+ 
 <!-- Gallery -->
-<div class="image-container" @mouseover="mostrarTexto" @mouseout="ocultarTexto">
-  <div :src="imagenURL" alt="Imagen" class="imagen">
-    <img @mouseover=""
-      src="../../img/fantasia.png"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water"
-    />
-    <div class="overlay" v-show="mostrarTexto">
-        <p>{{ Hola }}</p>
-      </div>
-    <img
-      src="../../img/fantasiafondo.png"
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Wintry Mountain Landscape"
-    />
-  </div>
-
-  <div class="col-lg-4 mb-4 mb-lg-0">
-    <img
-      src="../../img/romancefondo.png"      
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Mountains in the Clouds"
-    />
-
-    <img
-      src="../../img/romance.png"      
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Boat on Calm Water"
-    />
-  </div>
-
-  <div class="col-lg-4 mb-4 mb-lg-0">
-    <img
-      src="../../img/terror.png"      
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Waves at Sea"
-    />
-
-    <img
-      src="../../img/terrorfondo.png"      
-      class="w-100 shadow-1-strong rounded mb-4"
-      alt="Yosemite National Park"
-    />
-  </div>
-
+<div class="row">
   <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
     <img
-      src="../../img/fantasia.png"
+      src="../../img/fantasiafondo.png"
       class="w-100 shadow-1-strong rounded mb-4"
       alt="Boat on Calm Water"
     />
 
     <img
-      src="../../img/fantasiafondo.png"
+      src="../../img/fantasia.png"
       class="w-100 shadow-1-strong rounded mb-4"
       alt="Wintry Mountain Landscape"
     />
@@ -83,34 +41,31 @@
 
   <div class="col-lg-4 mb-4 mb-lg-0">
     <img
-      src="../../img/romancefondo.png"      
+      src="../../img/terror.png"
       class="w-100 shadow-1-strong rounded mb-4"
       alt="Mountains in the Clouds"
     />
 
     <img
-      src="../../img/romance.png"      
+      src="../../img/terrorfondo.png"
       class="w-100 shadow-1-strong rounded mb-4"
       alt="Boat on Calm Water"
     />
   </div>
-  
-
 
   <div class="col-lg-4 mb-4 mb-lg-0">
     <img
-      src="../../img/terror.png"      
+      src="../../img/romancefondo.png"
       class="w-100 shadow-1-strong rounded mb-4"
       alt="Waves at Sea"
     />
 
     <img
-      src="../../img/terrorfondo.png"      
+      src="../../img/romance.png"
       class="w-100 shadow-1-strong rounded mb-4"
       alt="Yosemite National Park"
     />
   </div>
 </div>
 <!-- Gallery -->
-
 </div>
