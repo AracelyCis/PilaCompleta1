@@ -13,3 +13,36 @@ div .logoindex{
 .bg-black {
   background: #090909;
 }
+
+.star-rating {
+	white-space: nowrap;
+}
+.star-rating [type="radio"] {
+	appearance: none;
+}
+.star-rating i {
+	font-size: 1.2em;
+	transition: 0.3s;
+}
+
+
+.star-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    color: #ccc; /* Color de las estrellas anteriores a la seleccionada */
+}
+
+/* Estilo para las estrellas anteriores a la seleccionada */
+.star-rating input:checked {
+  color: #ccc; /* Color de las estrellas anteriores a la seleccionada */
+}
+
+
+.star-rating label:has(~ :checked) i {
+	color: #faec1b;
+}
+/* Estilo para el input (ocultarlo) */
+.star-rating input:no-c  {
+  color: #ccc; /* Color de las estrellas anteriores a la seleccionada */
+}

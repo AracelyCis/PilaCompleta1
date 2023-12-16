@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link  rel="shortcut icon" class="rounded-circle mx-auto d-block logo m-4" href="../../img/logo.png">
+    <meta charset="UTF-8">
+    <title>Book App</title>
+    <!-- BOOTSTRAP - BOOTSWATCH THEME - COSMOS -->
+    <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+
+    {{> navigation }}
+
+    <main class="container p-5">
+      <div class="col-md-4 offset-md-4">
+        {{> messages }}
+        {{> errors }}
+      </div>
+      {{{ body }}}
+    </main>
+
+    <!-- Scritps -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../../axios"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

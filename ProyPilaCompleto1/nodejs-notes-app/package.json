@@ -21,6 +21,7 @@
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
     "vue": "^3.3.11",
+    "vue-star-rating": "^1.7.0",
     "vuetify": "^2.6.0"
   },
   "devDependencies": {

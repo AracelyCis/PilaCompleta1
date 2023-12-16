@@ -2,17 +2,38 @@
   {{#each notes}}
   <div class="col-md-3">
     <div class="card">
-      <div class="card-body">
-        <h4 class="card-title d-flex justify-content-between align-items-center">
+      <div class="card-body" >
+        <div style="text-align: center;" >
+          <h4 class="card-title d-flex justify-content-between align-items-center">
           {{ title }} <a href="/notes/edit/{{_id}}"><i class="fas fa-edit"></i></a>
         </h4>
+        </div>
+        <div style="text-align: justify;">
         <p>{{ description }} </p>
+        </div>
         <!-- DELETE REQUEST -->
         <form action="/notes/delete/{{_id}}?_method=DELETE" method="POST">
-          <input type="hidden" name="_method" value="DELETE">
+          <div style="text-align: center;">
+            <input type="hidden" name="_method" value="DELETE">
           <button type="submit" class="btn btn-danger btn-block btn-sm">Delete</button>
-        </form>
+          </div>
+         <p style="text-align: center;">Rating: </p>
+    <span class="star-rating">
+		<label for="rate-1" style="--i:1"><i class="fa-solid fas fa-star"></i></label>
+		<input type="radio" name="rating" id="rate-1" value="1">
+		<label for="rate-2" style="--i:2"><i class="fa-solid fas fa-star"></i></label>
+		<input type="radio" name="rating" id="rate-2" value="2" checked>
+		<label for="rate-3" style="--i:3"><i class="fa-solid fas fa-star"></i></label>
+		<input type="radio" name="rating" id="rate-3" value="3">
+		<label for="rate-4" style="--i:4"><i class="fa-solid fas fa-star"></i></label>
+		<input type="radio" name="rating" id="rate-4" value="4">
+		<label for="rate-5" style="--i:5"><i class="fa-solid fas fa-star"></i></label>
+		<input type="radio" name="rating" id="rate-5" value="5">
+	</span>
+      
       </div>
+        </form>
+          
     </div>
   </div>
   {{else}}
@@ -22,6 +43,9 @@
       <p clsss="lead">There are not Notes yet.</p>
       <a href="/notes/add" class="btn btn-success btn-block">Create One!</a>
     </div>
+    
   </div>
+
   {{/each}}
-</div>
+
+<script src="./StarRating.js"></script>
